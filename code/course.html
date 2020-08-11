@@ -11,23 +11,45 @@
 
 <body>
     <div class="o-page-wrapper">
-        <header class="c-main-header box">
-            <div class="o-page-content-wrapper">
-                <h1>Header</h1>
+        <header class="o-page-content-wrapper">
+            <div class="c-main-header">
+                <div class="c-main-header__icons">
+                    <div class="c-main-header__icons-arrow">
+                        <img src="./assets/icons/arrow.svg" alt="Menu arrow">
+                    </div>
+                    <div class="c-main-header__icons-logo">
+                        <img src="./assets/images/logo.png" alt="SoftUni logo">
+                    </div>
+                </div>
+                <nav class="navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__list-item">обучения</li>
+                        <li class="navbar__list-item">събития</li>
+                        <li class="navbar__list-item">преподаватели</li>
+                        <li class="navbar__list-item">блог</li>
+                        <li class="navbar__list-item">контакти</li>
+                    </ul>
+                </nav>
+                <div>
+                    <img src="./assets/icons/search.svg" alt="Search icon">
+                </div>
+                <button class="btn btn--secondary btn--nav">
+                    вход
+                </button>
             </div>
         </header>
-        <main>
-            <section>
-                <div>
+        <main class="o-page-main-wrapper">
+            <section class="section-heading">
+                <div class="section-heading-title o-page-content-wrapper">
                     <div>
                         Начинаещ
                     </div>
                     <h1>Първи стъпки в програмирането - част 2</h1>
                 </div>
             </section>
-            <section>
-                <div>
-                    <article>
+            <section class="section-introduction">
+                <div class="o-page-columns-grid section-introduction-wrapper">
+                    <article class="section-introduction__text-content">
                         <p>Това е втора част към онлайн обучението „Първи стъпки в програмирането”, който е първият
                             и
                             основополагащ онлайн модул по време на обучението по програмиране на SoftUni Kids. Той е
@@ -37,14 +59,14 @@
                             в направление софтуерни курсове се смята за преминато, след завършване и на двете части
                             от
                             курса и получен сертификат.</p>
-
+                        <br>
                         <p>По време на курса "Първи стъпки в програмирането - част 2", децата получават знания за
                             видовете цикъл, събития, а също така се учат на активно общуване в група и работа в екип
                             –
                             принципи, които са заложени в цялостната програма на обучението по програмиране на
                             SoftUni
                             Kids.</p>
-
+                        <br>
                         <p> Курсът завършва със създаване на сценарии, които са измислени, съставени и програмирани
                             от
                             децата. В последния ден на занятията родителите са добре дошли в последния половин час,
@@ -55,22 +77,39 @@
                             „Първи
                             стъпки в програмирането“.</p>
                     </article>
-                    <div>
-                        <div><img src="./assets/images/fearful-lady.png" alt="Videoclip"></div>
-                        <div><img src="./assets/images/play.png" alt="Button Play"></div>
+                    <div class="section-introduction__video">
+                        <div class="section-introduction-fearful-lady">
+                            <img src="./assets/images/fearful-lady.png" alt="Videoclip">
+                            <div class="section-introduction-btn-play">
+                                <img src="./assets/images/play.png" alt="Button Play">
+                            </div>
+                        </div>
+
                     </div>
-                    <div>
+                    <div class="section-introduction__icons--people">
                         <img src="./assets/icons/people.svg" alt="Icon of people">
                     </div>
-                    <div>
+                    <div class="section-introduction__strawberry">
                         <h2>За кого е подходящ?</h2>
                         <p>Онлайн курсът е подходящ за напълно начинаещи: необходимо е децата да могат да четат и
                             пишат и да имат достъп до компютър с интернет връзка.</p>
                     </div>
-                    <div>
+                    <div class="section-introduction__dots">
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                    </div>
+                    <div class="section-introduction__icons--puzzle">
                         <img src="./assets/icons/puzzle.svg" alt="Icon of puzzle">
                     </div>
-                    <div>
+                    <div class="section-introduction__cherry">
                         <h2>Какво ще умее детето след курса?</h2>
                         <p>При записване на второ дете (братче/сестриче) получавате 20% отстъпка от таксата за
                             второто дете.</p>
@@ -78,49 +117,55 @@
                     </div>
                 </div>
             </section>
-            <section>
-                <div>
-                    <!--div-->
-                    <img src="./assets/icons/book.svg" alt="Icon of book">
-                    <h2>Програма на обучението</h2>
-                    <p>През цялото време на курса ще имаме постоянна двустранна комуникация с децата. Ще имат възможност
-                        да ни задават въпроси и да общуват помежду си (най-вече в почивките и след занятия). Ще се
-                        забавляваме докато учим как да прогамираме.</p>
-                    <h6>занятия</h6>
-                    <div>
-                        <div>
-                            <p>1. Цикли и безкрайни цикли</p>
-                        </div>
-                        <div>
-                            <p>2. Събития</p>
-                        </div>
-                        <div>
-                            <p>3. Презентационни умения. Създаване на цялостен сценарий в Scratch.</p>
-                        </div>
-                        <div>
-                            <p>4. Работа по финален проект и презентирането му.</p>
-                        </div>
+            <section class="section-program">
+                <div class="o-page-columns-grid section-program-wrapper">
+                    <div class="section-program__icons--book">
+                        <img src="./assets/icons/book.svg" alt="Icon of book">
                     </div>
-                    <div>
+                    <article class="section-program__article">
+                        <h2>Програма на обучението</h2>
+                        <p>През цялото време на курса ще имаме постоянна двустранна комуникация с децата. Ще имат
+                            възможност
+                            да ни задават въпроси и да общуват помежду си (най-вече в почивките и след занятия). Ще се
+                            забавляваме докато учим как да прогамираме.</p>
+                        <h5>занятия</h5>
+                        <div>
+                            <div>
+                                <p>1. Цикли и безкрайни цикли</p>
+                            </div>
+                            <div>
+                                <p>2. Събития</p>
+                            </div>
+                            <div>
+                                <p>3. Презентационни умения. Създаване на цялостен сценарий в Scratch.</p>
+                            </div>
+                            <div>
+                                <p>4. Работа по финален проект и презентирането му.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="section-program__icons--program">
                         <img src="./assets/icons/program.svg" alt="Icon of program">
                     </div>
                 </div>
             </section>
-            <section>
-                <div>
-                    <img src="./assets/icons/reward.svg" alt="">
-                    <div>
+            <section class="section-info">
+                <div class="o-page-columns-grid section-info-wrapper">
+                    <div class="section-info__icons--reward">
+                        <img src="./assets/icons/reward.svg" alt="">
+                    </div>
+                    <article class="section-info__articles--reward">
                         <h2>Сертификат</h2>
                         <p>Да се опише максимално подробно кога и къде се провеждат занятията. За примера съм изпозлвал
                             описание от онлайн курс</p>
-                    </div>
-                    <div>
+                        </article>
+                    <div class="section-info__picture">
                         <p>Снимка на сертификата</p>
                     </div>
-                    <div>
+                    <div class="section-info__icons--clock">
                         <img src="./assets/icons/clock.svg" alt="Icon of clock">
                     </div>
-                    <div>
+                    <article class="section-info__articles--clock">
                         <h2>Кога и къде се провеждат занятията?</h2>
                         <p>Да се опише максимално подробно кога и къде се провеждат занятията. За примера съм изпозлвал
                             описание от онлайн курс.</p>
@@ -134,14 +179,32 @@
                             стая.</p>
 
                         <p>Крайният срок за записване е 05/06/2020, 23:59 часа включително.</p>
+                    </article>
+                    <div class="section-info__dots">
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
+                        <div class="dot dot--yellow"></div>
                     </div>
-                    <div>
-                        <!--dots-->
-                    </div>
-                    <div>
+                    <div class="section-info__icons--innovation">
                         <img src="./assets/icons/innovation.svg" alt="Icon of innovation">
                     </div>
-                    <div>
+                    <article class="section-info__articles--innovation">
                         <h2>Допълнителна информация</h2>
                         <p>В деня на първото занятие на вашето дете ще имаме нужда от два подписани и попълнени
                             екземпляра на договор за обучение в SoftUni Kids. Ще получите договора на имейл адреса ви,
@@ -155,7 +218,7 @@
                         <p>Почивен ден за групите - няма.</p>
 
                         <p>Запазването на място става единствено след успешно заплащане.</p>
-                    </div>
+                    </article>
                 </div>
             </section>
         </main>
@@ -171,7 +234,7 @@
                         <div class="footer__lists-wrapper">
                             <div class="wrapper">
                                 <ul class="footer__list ">
-                                    <li class="footer__list-item footer__list-item--stretch footer__list-item--first">
+                                    <li class="footer__list-item footer__list-item--stretch footer__list-item--heading">
                                         <a href="#">Softuni Kids</a></li>
                                 </ul>
                                 <ul class="footer__list footer__list--double">
@@ -185,13 +248,14 @@
                                 </ul>
                             </div>
                             <ul class="footer__list">
-                                <li class="footer__list-item footer__list-item--first"><a href="#">Всички обучения</a>
+                                <li class="footer__list-item footer__list-item--heading"><a href="#">Всички обучения</a>
                                 </li>
                                 <li class="footer__list-item"><a href="#">Курсове</a></li>
                                 <li class="footer__list-item"><a href="#">Събития</a></li>
                             </ul>
                             <ul class="footer__list">
-                                <li class="footer__list-item footer__list-item--first"><a href="#">Всички инициативи</a>
+                                <li class="footer__list-item footer__list-item--heading"><a href="#">Всички
+                                        инициативи</a>
                                 </li>
                                 <li class="footer__list-item"><a href="#">Software University</a></li>
                                 <li class="footer__list-item"><a href="#">SoftUni Digital</a></li>
@@ -202,7 +266,7 @@
                             </ul>
                             <div class="sd">
                                 <ul class="footer__list">
-                                    <li class="footer__list-item footer__list-item--first"><a href="#">Намери ни</a>
+                                    <li class="footer__list-item footer__list-item--heading"><a href="#">Намери ни</a>
                                     </li>
                                 </ul>
                                 <div class="icon-wrapper">

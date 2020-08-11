@@ -1,0 +1,17 @@
+@import '../settings/settings-colors';
+
+.dot {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+
+   &--white {
+    background-color: $white;
+    margin-right: 8px;
+   }
+
+   &--yellow {
+    background-color: $secondary-100;
+       margin-bottom: 8px;
+   }
+}

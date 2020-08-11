@@ -1,12 +1,36 @@
 @import "../settings/_settings-colors.scss";
 
 .navbar {
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
+    height: 100%;
+    margin: 0;
+    border: 0;
 
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    &__list {
+        display: grid;
+        grid-template-columns: 16.78% 15.22% 24.39% 10.38% 16.61%;
+        column-gap: 4.15%;
+        place-items: center center;
+        list-style: none;
+        height: 100%;
+        margin: 0;
+
+        &-item {
+            font-size: 13px;
+            font-weight: bold;
+            line-height: 16px;
+            color: $grey-700;
+
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $grey-700;
+
+                &:hover {
+                    cursor: pointer;
+                    color: $secondary-800;
+                }
+            }
+        }
     }
 
     &__items {
@@ -16,22 +40,6 @@
         &--footer {
             display: flex;
             position: relative;
-        }
-    }
-
-    &__item {
-        list-style: none;
-        margin: 15px;
-
-        a {
-            text-decoration: none;
-            text-transform: uppercase;
-            color: $grey-700;
-
-            &:hover {
-                cursor: pointer;
-                color: $secondary-800;
-            }
         }
     }
 }

@@ -1,3 +1,9 @@
+%frame {
+    max-width: 1290px;
+    margin: 0 auto;
+    width: 100%;
+}
+
 .o-page-wrapper {
     min-height: 100%;
     display: grid;
@@ -5,6 +11,22 @@
 }
 
 .o-page-content-wrapper {
-    max-width: 1290px;
-    margin: 0 auto;
+   @extend %frame;
+}
+
+.o-page-main-wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 302px 1fr 554px 1fr;
+}
+
+.o-page-columns-grid {
+    display: grid;
+    grid-template-columns: 2.48% 42.17% 0.78% 2.48% 42.17%;
+    column-gap: 2.48%;
+    @extend %frame;
+}
+
+.o-page-article-grid {
+    display: grid;
 }
