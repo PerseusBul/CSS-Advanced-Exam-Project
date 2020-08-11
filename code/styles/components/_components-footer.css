@@ -1,0 +1,131 @@
+.color-line {
+  background-color: #919191;
+  height: 12px;
+}
+
+.footer-wrapper {
+  background-color: #565656;
+  height: 312px;
+}
+
+.footer__logo-wrapper {
+  position: absolute;
+  width: 220px;
+  height: 403px;
+  left: 75px;
+  top: -92px;
+}
+
+.footer__lists-wrapper {
+  display: flex;
+  position: absolute;
+  left: 370px;
+  line-height: 19px;
+  padding: 10px 0;
+  height: 244px;
+  width: 70%;
+  margin: 0;
+  margin-top: 40px;
+}
+
+.footer__list {
+  display: flex;
+  flex-flow: column wrap;
+  margin-right: 74px;
+  margin-left: 11px;
+  margin: 0 74px 0 11px;
+  padding: 0;
+}
+
+.footer__list--double {
+  width: 248px;
+  height: 170px;
+}
+
+.footer__list-item {
+  list-style: none;
+}
+
+.footer__list-item a {
+  display: block;
+  text-decoration: none;
+  color: #E6E6E6;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 12px;
+  height: 20px;
+}
+
+.footer__list-item--first a {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 12px;
+  height: 20px;
+  width: 166px;
+}
+
+.footer__list-item--first:hover {
+  pointer-events: none !important;
+}
+
+.footer__list-item--stretch {
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.footer__list-item a:hover {
+  color: #41BEAD;
+}
+
+.icon-wrapper {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.icon-box-facebook {
+  width: 29px;
+  height: 28px;
+  margin-left: 11px;
+  color: #E6E6E6;
+}
+
+.icon-box-facebook:hover {
+  color: #41BEAD;
+}
+
+.icon-box-facebook i {
+  font-size: 1.92rem;
+}
+
+.icon-box-instagram {
+  width: 28px;
+  height: 28px;
+  margin-left: 30px;
+  color: #E6E6E6;
+}
+
+.icon-box-instagram:hover {
+  color: #41BEAD;
+}
+
+.icon-box-instagram i {
+  font-size: 1.92rem;
+}
+
+.copyright {
+  margin-left: 11px;
+  width: 177px;
+  height: 38px;
+  color: #919191;
+}
