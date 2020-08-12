@@ -12,12 +12,12 @@
 <body>
     <div class="o-page-wrapper">
         <header class="o-page-content-wrapper">
-            <div class="c-main-header">
-                <div class="c-main-header__icons">
-                    <div class="c-main-header__icons-arrow">
+            <div class="main-header">
+                <div class="main-header__icons">
+                    <div class="main-header__icons-arrow">
                         <img src="./assets/icons/arrow.svg" alt="Menu arrow">
                     </div>
-                    <div class="c-main-header__icons-logo">
+                    <div class="main-header__icons-logo">
                         <img src="./assets/images/logo.png" alt="SoftUni logo">
                     </div>
                 </div>
@@ -46,6 +46,68 @@
                     </div>
                     <h1>Първи стъпки в програмирането - част 2</h1>
                 </div>
+            </section>
+            <section class="section-fixed o-page-content-wrapper">
+                <div class="section-fixed__button">
+                    <button class="btn btn--secondary btn--section-fixed">
+                        записване
+                    </button>
+                </div>
+                <div class="section-fixed__dots">
+                    <div class="dot-section-fixed dot-section-fixed--blue"></div>
+                    <div class="dot-section-fixed dot-section-fixed--blue"></div>
+                    <div class="dot-section-fixed dot-section-fixed--blue"></div>
+                    <div class="dot-section-fixed dot-section-fixed--white"></div>
+                    <div class="dot-section-fixed dot-section-fixed--white"></div>
+                    <div class="dot-section-fixed dot-section-fixed--white"></div>
+                </div>
+                <article class="o-wrapper-article-grid section-fixed__article--money">
+                    <div class="section-fixed__icons--money">
+                        <img src="./assets/icons/money.svg" alt="Icon of money">
+                    </div>
+                    <div class="section-fixed__text-content">
+                        <p>цена</p>
+                        <div class="h4-like">
+                            500 лв.
+                        </div>
+                    </div>
+                </article>
+                <div class="box-grey"></div>
+                <article class="o-wrapper-article-grid">
+                    <div class="section-fixed__icons--people">
+                        <img src="./assets/icons/people.svg" alt="Icon of people">
+                    </div>
+                    <div class="section-fixed__text-content">
+                        <p>подходящ за</p>
+                        <div class="h4-like">
+                            1-6 клас
+                        </div>
+                    </div>
+                </article>
+                <div class="box-grey"></div>
+                <article class="o-wrapper-article-grid">
+                    <div class="section-fixed__icons--calendar">
+                        <img src="./assets/icons/calendar.svg" alt="Icon of calendar">
+                    </div>
+                    <div class="section-fixed__text-content">
+                        <p>начало</p>
+                        <div class="h4-like">
+                            16 май 2020
+                        </div>
+                    </div>
+                </article>
+                <div class="box-grey"></div>
+                <article class="o-wrapper-article-grid">
+                    <div class="section-fixed__icons--location">
+                        <img src="./assets/icons/location.svg" alt="Icon of location">
+                    </div>
+                    <div class="section-fixed__text-content">
+                        <p>локация</p>
+                        <div class="h4-like">
+                            гр. София
+                        </div>
+                    </div>
+                </article>
             </section>
             <section class="section-introduction">
                 <div class="o-page-columns-grid section-introduction-wrapper">
@@ -117,6 +179,9 @@
                     </div>
                 </div>
             </section>
+            <section class="section-dots section-dots--top">
+                <hr>
+            </section>
             <section class="section-program">
                 <div class="o-page-columns-grid section-program-wrapper">
                     <div class="section-program__icons--book">
@@ -124,23 +189,36 @@
                     </div>
                     <article class="section-program__article">
                         <h2>Програма на обучението</h2>
-                        <p>През цялото време на курса ще имаме постоянна двустранна комуникация с децата. Ще имат
+                        <p class="section-program__article-text">През цялото време на курса ще имаме постоянна
+                            двустранна комуникация с децата. Ще имат
                             възможност
                             да ни задават въпроси и да общуват помежду си (най-вече в почивките и след занятия). Ще се
                             забавляваме докато учим как да прогамираме.</p>
                         <h5>занятия</h5>
-                        <div>
-                            <div>
+                        <div class="parent">
+                            <div class="box box--white">
                                 <p>1. Цикли и безкрайни цикли</p>
+                                <div class="section-program__icons--arrow-down">
+                                    <img src="./assets/icons/arrow-down.png" alt="Arrow">
+                                </div>
                             </div>
-                            <div>
+                            <div class="box box--white">
                                 <p>2. Събития</p>
+                                <div class="section-program__icons--arrow-down">
+                                    <img src="./assets/icons/arrow-down.png" alt="Arrow">
+                                </div>
                             </div>
-                            <div>
+                            <div class="box box--white">
                                 <p>3. Презентационни умения. Създаване на цялостен сценарий в Scratch.</p>
+                                <div class="section-program__icons--arrow-down">
+                                    <img src="./assets/icons/arrow-down.png" alt="Arrow">
+                                </div>
                             </div>
-                            <div>
+                            <div class="box box--white">
                                 <p>4. Работа по финален проект и презентирането му.</p>
+                                <div class="section-program__icons--arrow-down">
+                                    <img src="./assets/icons/arrow-down.png" alt="Arrow">
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -148,6 +226,9 @@
                         <img src="./assets/icons/program.svg" alt="Icon of program">
                     </div>
                 </div>
+            </section>
+            <section class="section-dots section-dots--bottom">
+                <hr>
             </section>
             <section class="section-info">
                 <div class="o-page-columns-grid section-info-wrapper">
@@ -158,7 +239,7 @@
                         <h2>Сертификат</h2>
                         <p>Да се опише максимално подробно кога и къде се провеждат занятията. За примера съм изпозлвал
                             описание от онлайн курс</p>
-                        </article>
+                    </article>
                     <div class="section-info__picture">
                         <p>Снимка на сертификата</p>
                     </div>
@@ -223,68 +304,68 @@
             </section>
         </main>
         <footer class="footer">
-            <div class="wrapper">
-                <div class="color-line">
-                </div>
-                <div class="footer-wrapper">
-                    <nav class="navbar__items">
-                        <div class="footer__logo-wrapper">
+            <div class="footer__color-line">
+            </div>
+            <div class="o-footer-wrapper o-page-content-wrapper">
+                <div class="footer-wrapper o-footer-wrapper-grid navbar__items">
+                    <!-- <nav class="o-footer-wrapper-grid navbar__items"> -->
+                        <div class="footer-wrapper__logo">
                             <img src="./assets/icons/figure-footer.svg" alt="Orange icon of bear">
                         </div>
-                        <div class="footer__lists-wrapper">
-                            <div class="wrapper">
-                                <ul class="footer__list ">
-                                    <li class="footer__list-item footer__list-item--stretch footer__list-item--heading">
-                                        <a href="#">Softuni Kids</a></li>
-                                </ul>
-                                <ul class="footer__list footer__list--double">
-                                    <li class="footer__list-item"><a href="#">Начало</a></li>
-                                    <li class="footer__list-item"><a href="#">Летни академии</a></li>
-                                    <li class="footer__list-item"><a href="#">Преподаватели</a></li>
-                                    <li class="footer__list-item"><a href="#">Блог</a></li>
-                                    <li class="footer__list-item"><a href="#">Контакти</a></li>
-                                    <li class="footer__list-item"><a href="#">Общи условия</a></li>
-                                    <li class="footer__list-item"><a href="#">Лични данни</a></li>
-                                </ul>
-                            </div>
+                        <!-- <div class="footer__lists-wrapper"> -->
+                        <div class="footer-wrapper-list">
                             <ul class="footer__list">
-                                <li class="footer__list-item footer__list-item--heading"><a href="#">Всички обучения</a>
-                                </li>
-                                <li class="footer__list-item"><a href="#">Курсове</a></li>
-                                <li class="footer__list-item"><a href="#">Събития</a></li>
+                                <li class="footer__list-item footer__list-item--stretch footer__list-item--heading">
+                                    <a href="#">Softuni Kids</a></li>
                             </ul>
+                            <ul class="footer__list footer__list--double">
+                                <li class="footer__list-item"><a href="#">Начало</a></li>
+                                <li class="footer__list-item"><a href="#">Летни академии</a></li>
+                                <li class="footer__list-item"><a href="#">Преподаватели</a></li>
+                                <li class="footer__list-item"><a href="#">Блог</a></li>
+                                <li class="footer__list-item"><a href="#">Контакти</a></li>
+                                <li class="footer__list-item"><a href="#">Общи условия</a></li>
+                                <li class="footer__list-item"><a href="#">Лични данни</a></li>
+                            </ul>
+                        </div>
+                        <ul class="footer__list">
+                            <li class="footer__list-item footer__list-item--heading"><a href="#">Всички обучения</a>
+                            </li>
+                            <li class="footer__list-item"><a href="#">Курсове</a></li>
+                            <li class="footer__list-item"><a href="#">Събития</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__list-item footer__list-item--heading"><a href="#">Всички
+                                    инициативи</a>
+                            </li>
+                            <li class="footer__list-item"><a href="#">Software University</a></li>
+                            <li class="footer__list-item"><a href="#">SoftUni Digital</a></li>
+                            <li class="footer__list-item"><a href="#">SoftUni Creative</a></li>
+                            <li class="footer__list-item"><a href="#">SoftUni
+                                    Svetlina</a></li>
+                            <li class="footer__list-item"><a href="#">SoftUni Foundation</a></li>
+                        </ul>
+                        <div class="sd">
                             <ul class="footer__list">
-                                <li class="footer__list-item footer__list-item--heading"><a href="#">Всички
-                                        инициативи</a>
+                                <li class="footer__list-item footer__list-item--heading"><a href="#">Намери ни</a>
                                 </li>
-                                <li class="footer__list-item"><a href="#">Software University</a></li>
-                                <li class="footer__list-item"><a href="#">SoftUni Digital</a></li>
-                                <li class="footer__list-item"><a href="#">SoftUni Creative</a></li>
-                                <li class="footer__list-item"><a href="#">SoftUni
-                                        Svetlina</a></li>
-                                <li class="footer__list-item"><a href="#">SoftUni Foundation</a></li>
                             </ul>
-                            <div class="sd">
-                                <ul class="footer__list">
-                                    <li class="footer__list-item footer__list-item--heading"><a href="#">Намери ни</a>
-                                    </li>
-                                </ul>
-                                <div class="icon-wrapper">
-                                    <div class="icon-box-facebook">
-                                        <i class="fab fa-facebook"></i>
-                                        <!-- <img src="./assets/icons/facebook-icon.svg" alt="facebook-icon"> -->
-                                    </div>
-                                    <div class="icon-box-instagram">
-                                        <i class="fab fa-instagram"></i>
-                                    </div>
+                            <div class="icon-wrapper">
+                                <div class="icon-box-facebook">
+                                    <i class="fab fa-facebook"></i>
+                                    <!-- <img src="./assets/icons/facebook-icon.svg" alt="facebook-icon"> -->
+                                </div>
+                                <div class="icon-box-instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
 
-                                </div>
-                                <div class="copyright">
-                                    &copy; 2016-2020 - SoftUni Kids. All Rights Reserved.
-                                </div>
+                            </div>
+                            <div class="copyright">
+                                &copy; 2016-2020 - SoftUni Kids. All Rights Reserved.
                             </div>
                         </div>
-                    </nav>
+                        <!-- </div> -->
+                    <!-- </nav> -->
                 </div>
             </div>
         </footer>

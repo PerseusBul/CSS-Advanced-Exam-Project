@@ -1,17 +1,32 @@
-@import '../settings/settings-colors';
+@import "../settings/settings-colors";
 
 .dot {
     border-radius: 50%;
     width: 10px;
     height: 10px;
 
-   &--white {
-    background-color: $white;
-    margin-right: 8px;
-   }
+    &--white {
+        background-color: $white;
+        margin-right: 8px;
+    }
 
-   &--yellow {
-    background-color: $secondary-100;
-       margin-bottom: 8px;
-   }
+    &--yellow {
+        background-color: $secondary-100;
+        margin-bottom: 8px;
+    }
+}
+
+.dot-section-fixed {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin-bottom: 7px;
+
+    &--white {
+        box-shadow: inset 2px 2px 4px #c4c4c4;
+    }
+
+    &--blue {
+        box-shadow: inset 0px 0px 3px 5px $blue-400;
+    }
 }

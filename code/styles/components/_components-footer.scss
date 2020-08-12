@@ -1,36 +1,27 @@
 @import "../settings/_settings-colors.scss";
 
-.color-line {
-    background-color: $grey-500;
-    height: 12px;
-}
-
-.footer-wrapper {
+.footer {
     background-color: $grey-700;
     height: 312px;
-}
 
-.footer {
-    &__logo-wrapper {
-        position: absolute;
-        width: 220px;
-        height: 403px;
-        left: 75px;
-        top: -92px;
+    &__color-line {
+        background-color: $grey-500;
+        height: 12px;
     }
     
-    &__lists-wrapper {
-        display: flex;
-        position: absolute;
-        left: 370px;
-        line-height: 19px;
-        padding: 10px 0;
-        height: 244px;
-        width: 70%;
-        margin: 0;
-        margin-top: 40px;
-    }
+    &-wrapper {
+        &-list {
+            grid-column: 2/3;
+        }
+
+        &__logo {
+            position: absolute;
+            height: 403px;
+            top: -166px;
+        }
     
+    }
+
     &__list {
         display: flex;
         flex-flow: column wrap;
@@ -38,7 +29,8 @@
         margin-left: 11px;
         margin: 0 74px 0 11px;
         padding: 0;
-    
+        justify-content: flex-start;
+
         &--double {
             width: 248px;
             height: 170px;
@@ -46,7 +38,7 @@
 
         &-item {
             list-style: none;
-        
+
             a {
                 display: block;
                 text-decoration: none;
@@ -59,8 +51,8 @@
                 margin-bottom: 12px;
                 height: 20px;
             }
-        
-            &--first {
+
+            &--heading {
                 a {
                     display: block;
                     text-decoration: none;
@@ -74,19 +66,18 @@
                     height: 20px;
                     width: 166px;
                 }
-        
-                &:hover{
+
+                &:hover {
                     pointer-events: none !important;
                 }
             }
-        
-            
+
             &--stretch {
                 display: block;
                 width: 100%;
                 margin-bottom: 0;
             }
-        
+
             a:hover {
                 color: $primary-300;
             }
@@ -100,39 +91,3 @@
     margin-bottom: 48px;
 }
 
-.icon-box-facebook {
-    width: 29px;
-    height: 28px;
-    margin-left: 11px;
-    color: $grey-200;
-    
-    &:hover {
-        color: $primary-300;
-    }
-
-    & i {
-        font-size: 1.92rem;
-    }
-}
-
-.icon-box-instagram {
-    width: 28px;
-    height: 28px;
-    margin-left: 30px;
-    color: $grey-200;
-    
-    &:hover {
-        color: $primary-300;
-    }
-
-    & i {
-        font-size: 1.92rem;
-    }
-}
-
-.copyright {
-    margin-left: 11px;
-    width: 177px;
-    height: 38px;
-    color: $grey-500;
-}

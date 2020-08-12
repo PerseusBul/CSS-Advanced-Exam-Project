@@ -1,0 +1,60 @@
+@import '../settings/settings-colors';
+
+.box{
+    display: grid;
+    border-radius: 6px;
+    height: 50px;
+   
+    &--white {
+        grid-template-columns: 1fr 16px;
+        place-items: center start;
+        place-content: center space-between;
+        margin-top: 16px;
+        background-color: $white;
+        padding-left: 14px;
+        padding-right: 24px;
+    }
+}
+
+.box-grey {
+    width: 2px;
+    height: 24px;
+    background-color: $grey-100;
+}
+
+.icon-box-facebook {
+    width: 29px;
+    height: 28px;
+    margin-left: 11px;
+    color: $grey-200;
+
+    &:hover {
+        color: $primary-300;
+    }
+
+    & i {
+        font-size: 1.92rem;
+    }
+}
+
+.icon-box-instagram {
+    width: 28px;
+    height: 28px;
+    margin-left: 30px;
+    color: $grey-200;
+
+    &:hover {
+        color: $primary-300;
+    }
+
+    & i {
+        font-size: 1.92rem;
+    }
+}
+
+.copyright {
+    margin-left: 11px;
+    width: 185px;
+    height: 38px;
+    color: $grey-500;
+}

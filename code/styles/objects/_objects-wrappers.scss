@@ -1,3 +1,5 @@
+@import "../settings/settings-colors";
+
 %frame {
     max-width: 1290px;
     margin: 0 auto;
@@ -11,13 +13,14 @@
 }
 
 .o-page-content-wrapper {
-   @extend %frame;
+    @extend %frame;
 }
 
 .o-page-main-wrapper {
     min-height: 100%;
     display: grid;
-    grid-template-rows: 302px 1fr 554px 1fr;
+    grid-template-rows: 302px 112px 695px 10px 554px 10px 894px;
+    height: 2577px;
 }
 
 .o-page-columns-grid {
@@ -27,6 +30,22 @@
     @extend %frame;
 }
 
-.o-page-article-grid {
+.o-wrapper-article-grid {
     display: grid;
+    grid-template-columns: 32px 1fr;
+    column-gap: 24px;
+    align-items: center;
+}
+
+.o-footer-wrapper-grid {
+    display: grid;
+    grid-template-columns: 220px 19.38% 11.24% 12.95% 13.72%;
+    column-gap: 6.05%;
+    height: 100%;
+    align-items: start;
+}
+
+.o-footer-wrapper {
+    height: 100%;
+    padding-top: 64px;
 }
