@@ -14,6 +14,13 @@
     &--secondary {
         background: $secondary-800;
         color: $white;
+
+        &-reversed {
+            background: $white;
+            color: $secondary-800;
+            border: 1px solid $secondary-800;
+            font-size: 14;
+        }
     }
 
     &--nav {

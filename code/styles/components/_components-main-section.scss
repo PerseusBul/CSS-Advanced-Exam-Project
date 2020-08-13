@@ -50,48 +50,113 @@
 }
 
 .section-fixed {
-    display: grid;
-    grid-template-columns: 20% 12px 12.56% 2px 12.87% 2px 14.18% 2px 16.66%;
-    column-gap: 2.48%;
-    justify-items: start;
-    align-items: center;
-
-    position: relative;
-    bottom: 56px;
-    z-index: 1;
-
     border-radius: 12px;
     box-shadow: $primary-shadow;
     background-color: $white;
+    z-index: 1;
 
-    &__article {
-        &--money {
-            justify-self: end;
+    &--course {
+        display: grid;
+        grid-template-columns: 20% 12px 12.56% 2px 12.87% 2px 14.18% 2px 16.66%;
+        column-gap: 2.48%;
+        justify-items: start;
+        align-items: center;
+
+        position: relative;
+        bottom: 56px;
+
+        &__article {
+            &--money {
+                justify-self: end;
+            }
+        }
+
+        &__dots {
+            position: relative;
+            top: 12px;
+
+            height: 100%;
+            width: 100%;
+        }
+
+        &__dots::after {
+            position: absolute;
+            content: "";
+            border-radius: 50%;
+            width: 12px;
+            height: 12px;
+            margin-bottom: 7px;
+            bottom: 114px;
+            box-shadow: inset 0px 0px 3px 5px $blue-400;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 6px;
         }
     }
 
-    &__dots {
-        position: relative;
-        top: 12px;
+    &--contact-us {
+        width: 519px;
+        height: 382px;
+        top: 202px;
+        left: 75px;
 
-        height: 100%;
-        width: 100%;
-    }
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 45.91% 19.96% 22.95%;
+            grid-template-rows: 42px 108px 108px 60px;
+            column-gap: 5.22%;
+            place-items: start;
 
-    &__dots::after {
-        position: absolute;
-        content: "";
-        border-radius: 50%;
-        width: 12px;
-        height: 12px;
-        margin-bottom: 7px;
-        bottom: 114px;
-        box-shadow: inset 0px 0px 3px 5px $blue-400;
-    }
+            width: 100%;
+            height: 100%;
+            padding: 32px;
 
-    p {
-        margin-top: 0;
-        margin-bottom: 6px;
+            p {
+                margin: 0;
+            }
+
+            h4 {
+                color: $primary-300;
+            }
+
+            section {
+                grid-column: 2/4;
+            }
+
+            article {
+                display: grid;
+                grid-template-rows: 22px 22px;
+                row-gap: 34px;
+
+                p {
+                    color: $secondary-800;
+                }
+            }
+        }
+
+        &__button {
+            place-self: end center;
+            grid-column: 1/4;
+        }
+
+        &__contacts {
+            h4 {
+                margin-bottom: 18px;
+            }
+
+            p {
+                margin-top: 12px;
+            }
+        }
+
+        &__week {
+            display: grid;
+            grid-template-rows: 38px 38px;
+            row-gap: 18px;
+            align-items: start;
+        }
     }
 }
 
@@ -295,6 +360,44 @@
         grid-column: 3/4;
         grid-row: 2;
     }
+
+    &--how-to-get-there {
+        background-color: $secondary-50;
+
+        &__wrapper {
+            display: grid;
+            grid-template-rows: 36px 296px;
+            row-gap: 48px;
+            justify-items: center;
+            align-content: center;
+            height: 100%;
+
+            h2 {
+                margin: 0;
+                color: $primary-300;
+            }
+        }
+
+        &__wrapper-article {
+            display: grid;
+            grid-template-columns: 31.63% 31.63% 31.63%;
+            grid-template-rows: 32px 40px 40px 60px 60px;
+            row-gap: 16px;
+            column-gap: 2.55%;
+            place-items: start center;
+            width: 100%;
+            height: 100%;
+
+            h3 {
+                margin: 0;
+                color: $primary-300;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+    }
 }
 
 .section-intro-trainers {
@@ -352,5 +455,43 @@
                 margin-bottom: 24px !important;
             }
         }
+    }
+}
+
+.section-mail-contact-us {
+    &__wrapper {
+        display: grid;
+        grid-template-rows: 24px 52px 192px 48px;
+        row-gap: 32px;
+        width: 850px;
+        height: 100%;
+        margin: 0 auto;
+        justify-items: center;
+        align-content: center;
+
+        h2 {
+            color: $primary-300;
+            margin: 0;
+        }
+
+        p {
+            color: $grey-500;
+        }
+    }
+
+    &__email {
+        display: grid;
+        grid-template-columns: 48.12% 48.12%;
+        column-gap: 3.76%;
+        width: 100%;
+    }
+
+    &__text-area {
+        width: 100%;
+    }
+
+    &__button {
+        justify-self: start;
+        margin-left: -64px;
     }
 }

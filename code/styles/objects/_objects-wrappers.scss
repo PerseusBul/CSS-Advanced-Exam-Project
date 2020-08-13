@@ -10,6 +10,21 @@
     min-height: 100%;
     display: grid;
     grid-template-rows: 74px 1fr 312px;
+
+    &--contact-us {
+        grid-template-rows: 1fr 312px;
+    }
+}
+
+.o-page-wrapper-position {
+    &--relative {
+        position: relative;
+    }
+
+    &--absolute {
+        position: absolute;
+
+    }
 }
 
 .o-page-content-wrapper {
@@ -33,6 +48,11 @@
         grid-template-rows: 256px 356px 10px 1248px 412px;
         row-gap: 96px;
         height: 2666px;
+    }
+
+    &--contact-us {
+        grid-template-rows: 500px 686px 572px;
+        height: 1758px;
     }
 }
 

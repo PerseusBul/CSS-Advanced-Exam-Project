@@ -24,6 +24,24 @@
         height: 52px;
         line-height: 19px;
     }
+
+    &--grey-border {
+        place-items: center start;
+        padding-left: 16px;
+        border: 1px solid $grey-500;
+        height: 52px;
+        line-height: 19px;
+    }
+
+    &--big-grey-border {
+        place-items: start start;
+        padding-left: 16px;
+        border: 1px solid $grey-500;
+        height: 100%;
+        width: 100%;
+        line-height: 19px;
+    }
+
 }
 
 .box-grey {
