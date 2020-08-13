@@ -14,13 +14,26 @@
 
 .o-page-content-wrapper {
     @extend %frame;
+
+    &--profiles {
+        max-width: 1010px;
+    }
 }
 
 .o-page-main-wrapper {
     min-height: 100%;
     display: grid;
-    grid-template-rows: 302px 112px 695px 10px 554px 10px 894px;
-    height: 2577px;
+
+    &--course {
+        grid-template-rows: 302px 112px 695px 10px 554px 10px 894px;
+        height: 2577px;
+    }
+
+    &--trainers{
+        grid-template-rows: 256px 356px 10px 1248px 412px;
+        row-gap: 96px;
+        height: 2666px;
+    }
 }
 
 .o-page-columns-grid {
@@ -28,6 +41,21 @@
     grid-template-columns: 2.48% 42.17% 0.78% 2.48% 42.17%;
     column-gap: 2.48%;
     @extend %frame;
+}
+
+.o-section-wrapper-centered {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    color: $white;
+    height: 100%;
+
+    p {
+        width: 850px;
+        color: $white;
+        margin: 0;
+        text-align: center;
+    }
 }
 
 .o-wrapper-article-grid {

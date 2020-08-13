@@ -1,10 +1,10 @@
-@import '../settings/settings-colors';
+@import "../settings/settings-colors";
 
-.box{
+.box {
     display: grid;
     border-radius: 6px;
     height: 50px;
-   
+
     &--white {
         grid-template-columns: 1fr 16px;
         place-items: center start;
@@ -14,12 +14,35 @@
         padding-left: 14px;
         padding-right: 24px;
     }
+
+    &--blue {
+        place-items: center start;
+        padding-left: 16px;
+        margin-top: 48px;
+        background-color: $blue-400;
+        border: 1px solid $white;
+        height: 52px;
+        line-height: 19px;
+    }
 }
 
 .box-grey {
     width: 2px;
     height: 24px;
     background-color: $grey-100;
+}
+
+.box-horizontal {
+    width: 100%;
+    height: 12px;
+
+    &--blue {
+        background-color: $blue-200;
+    }
+
+    &--grey {
+        background-color: $grey-500;
+    }
 }
 
 .icon-box-facebook {
@@ -57,4 +80,37 @@
     width: 185px;
     height: 38px;
     color: $grey-500;
+}
+
+.box-image-frame {
+    width: 188px;
+    height: 188px;
+    border-radius: 50%;
+    border: 8px solid $primary-300;
+
+    img {
+        position: relative;
+        border-radius: 50%;
+
+        &::after {
+            position: absolute;
+            background-color: $secondary-800;
+            opacity: 0.8;
+            content: " " attr("Hello");
+            color: red;
+        }
+
+        &:hover {
+            opacity: 0.8;
+            cursor: pointer;
+
+            &::after {
+                position: absolute;
+                background-color: $secondary-800;
+                opacity: 0.8;
+                content: " " attr("hello");
+                transition-delay: 0s;
+            }
+        }
+    }
 }

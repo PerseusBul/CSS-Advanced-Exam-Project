@@ -2,33 +2,49 @@
 @import "../settings/settings-shadows";
 
 .section-heading {
-    background-color: $blue-400;
+    &--course {
+        background-color: $blue-400;
 
-    &-title {
-        display: grid;
-        grid-template-rows: 22px 88px;
-        row-gap: 24px;
-        place-content: center center;
-        place-items: center center;
-        color: $white;
-        height: 100%;
+        &-title {
+            div {
+                background-color: $secondary-500;
+                font-size: 12px;
+                line-height: 14px;
+                border-radius: 2px;
+                width: 89px;
+                height: 100%;
+                padding: 4px 8px;
+                text-transform: uppercase;
+                box-shadow: $primary-shadow;
+            }
 
-        div {
-            background-color: $secondary-500;
-            color: $white;
-            font-size: 12px;
-            line-height: 14px;
-            border-radius: 2px;
-            width: 89px;
-            height: 100%;
-            padding: 4px 8px;
-            text-transform: uppercase;
-            box-shadow: $primary-shadow;
+            h1 {
+                width: 648px;
+                text-align: center;
+                margin-top: 24px;
+            }
         }
+    }
 
-        h1 {
-            width: 648px;
-            text-align: center;
+    &--trainers {
+        background-color: $secondary-600;
+
+        &-subscribe {
+            background-color: $blue-400;
+
+            &__input-fields {
+                width: 936px;
+                height: 74px;
+                display: grid;
+                grid-template-columns: 24.35% 24.35% 24.35% 156px;
+                column-gap: 3.42%;
+                margin-bottom: 134px;
+            }
+
+            &__button {
+                margin-top: 48px;
+                margin-left: -48px !important;
+            }
         }
     }
 }
@@ -54,18 +70,6 @@
         }
     }
 
-    // &__dots::before {
-    //     position: absolute;
-    //     content: '';
-    //     background-color: $blue-400;
-    //     height: 50%;
-    //     width: 12px;
-    //     bottom: 56px;
-    //     left: 290px;
-    //     opacity: 0.5;
-    // }
-  
-
     &__dots {
         position: relative;
         top: 12px;
@@ -82,7 +86,7 @@
         height: 12px;
         margin-bottom: 7px;
         bottom: 114px;
-          box-shadow: inset 0px 0px 3px 5px $blue-400;
+        box-shadow: inset 0px 0px 3px 5px $blue-400;
     }
 
     p {
@@ -168,7 +172,6 @@
         border: none;
         border-top: 10px dotted #fff;
         color: #fff;
-        // height: 10px;
         width: 100%;
         margin: 0;
     }
@@ -183,6 +186,10 @@
         hr {
             bottom: 5px;
         }
+    }
+
+    &--primary {
+        border-top: 10px dotted $primary-50;
     }
 }
 
@@ -287,5 +294,63 @@
     &__dots {
         grid-column: 3/4;
         grid-row: 2;
+    }
+}
+
+.section-intro-trainers {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 14.57% 31.7% 14.57% 31.7%;
+        column-gap: 2.48%;
+        place-items: start;
+
+        height: 100%;
+
+        &-profiles {
+            display: grid;
+            grid-template-columns: 22.74% 22.74% 22.74% 22.74%;
+            grid-template-rows: 264px 264px 264px 264px;
+            column-gap: 3%;
+            row-gap: 64px;
+            height: 100%;
+        }
+    }
+
+    &__article {
+        h4 {
+            color: $primary-300;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        &-position {
+            height: 22px;
+            font-size: 14px;
+            line-height: 16px;
+            color: $grey-400 !important;
+            padding-top: 3px;
+        }
+
+        &--intro {
+            &-position {
+                margin-bottom: 24px !important;
+            }
+        }
+
+        &--profiles {
+            display: grid;
+            justify-items: center;
+
+            h4 {
+                margin-top: 24px;
+            }
+
+            &-position {
+                margin-bottom: 24px !important;
+            }
+        }
     }
 }
