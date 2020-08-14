@@ -1,9 +1,14 @@
 @import "../settings/settings-colors";
+@import "../settings/settings-breakpoints";
 
 %frame {
     max-width: 1290px;
     margin: 0 auto;
     width: 100%;
+
+    @include for-phone-only {
+        max-width: 335px;
+    }
 }
 
 .o-page-wrapper {
@@ -23,7 +28,6 @@
 
     &--absolute {
         position: absolute;
-
     }
 }
 
@@ -42,12 +46,24 @@
     &--course {
         grid-template-rows: 302px 112px 695px 10px 554px 10px 894px;
         height: 2577px;
+
+        @include for-phone-only {
+            grid-template-rows: 302px 562px 1320px 10px 757px 10px 1100px;
+            row-gap: 32px;
+            height: 4253px;
+        }
     }
 
-    &--trainers{
+    &--trainers {
         grid-template-rows: 256px 356px 10px 1248px 412px;
         row-gap: 96px;
         height: 2666px;
+
+        @include for-phone-only {
+            grid-template-rows: 356px 1309px 10px 1216px 674px;
+            row-gap: 64px;
+            height: 3821px;
+        }
     }
 
     &--contact-us {
@@ -61,6 +77,11 @@
     grid-template-columns: 2.48% 42.17% 0.78% 2.48% 42.17%;
     column-gap: 2.48%;
     @extend %frame;
+
+    @include for-phone-only {
+        grid-template-columns: 9.55% 85.67%;
+        column-gap: 16px;
+    }
 }
 
 .o-section-wrapper-centered {
@@ -75,6 +96,10 @@
         color: $white;
         margin: 0;
         text-align: center;
+
+        @include for-phone-only {
+           width: 335px;
+        }
     }
 }
 
@@ -88,12 +113,26 @@
 .o-footer-wrapper-grid {
     display: grid;
     grid-template-columns: 220px 19.38% 11.24% 12.95% 13.72%;
+    grid-template-rows: 192px 38px;
     column-gap: 6.05%;
+
     height: 100%;
     align-items: start;
+
+    @include for-phone-only {
+        grid-template-columns: 43.28% 49.85%;
+        grid-template-rows: 184px 64px 152px 102px;
+        column-gap: 6.86%;
+
+        align-items: start;
+    }
 }
 
 .o-footer-wrapper {
     height: 100%;
     padding-top: 64px;
+
+    @include for-phone-only {
+        padding-top: 52px;
+    }
 }

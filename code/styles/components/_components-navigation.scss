@@ -1,9 +1,14 @@
 @import "../settings/_settings-colors.scss";
+@import '../settings/settings-breakpoints';
 
 .navbar {
     height: 100%;
     margin: 0;
     border: 0;
+
+    @include for-phone-only{
+        display: none;
+    }
 
     &__list {
         display: grid;

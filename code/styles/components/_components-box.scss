@@ -1,4 +1,5 @@
 @import "../settings/settings-colors";
+@import "../settings/settings-breakpoints";
 
 .box {
     display: grid;
@@ -41,7 +42,6 @@
         width: 100%;
         line-height: 19px;
     }
-
 }
 
 .box-grey {
@@ -98,6 +98,24 @@
     width: 185px;
     height: 38px;
     color: $grey-500;
+
+    grid-column: 5/6;
+    grid-row: 2;
+
+    position: relative;
+    bottom: 72px;
+
+    @include for-phone-only {
+        grid-column: 1/3;
+        grid-row: 4;
+        border-top: 1px solid $grey-600;
+        text-align: center;
+
+        width: 100%;
+        padding: 32px;
+
+        position: static;
+    }
 }
 
 .box-image-frame {
