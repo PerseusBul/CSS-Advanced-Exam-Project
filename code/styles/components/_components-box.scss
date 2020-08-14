@@ -48,6 +48,12 @@
     width: 2px;
     height: 24px;
     background-color: $grey-100;
+
+    @include for-phone-only {
+        width: 24px;
+        height: 2px;
+        margin-left: 24px;
+    }
 }
 
 .box-horizontal {
@@ -119,6 +125,7 @@
 }
 
 .box-image-frame {
+    position: relative;
     width: 188px;
     height: 188px;
     border-radius: 50%;
@@ -127,26 +134,55 @@
     img {
         position: relative;
         border-radius: 50%;
+    }
+
+    
+    &::after {
+        position: absolute;
+        display: none;
+        content: " ";
+        background-color: $secondary-800;
+        opacity: 0.8;
+        width: 172px;
+        height: 172px;
+        border-radius: 50%;
+    }
+
+    &:hover {
+        cursor: pointer;
 
         &::after {
-            position: absolute;
-            background-color: $secondary-800;
-            opacity: 0.8;
-            content: " " attr("Hello");
-            color: red;
+            display: block;
+            bottom: 0.1px;
+            z-index: 1;
         }
 
-        &:hover {
-            opacity: 0.8;
-            cursor: pointer;
+        div.box-image-frame-hidden {
+            visibility: visible;
+        }
+    }
 
-            &::after {
-                position: absolute;
-                background-color: $secondary-800;
-                opacity: 0.8;
-                content: " " attr("hello");
-                transition-delay: 0s;
-            }
+    &-hidden {
+        display: grid;
+        place-items: center;
+        position: absolute;
+        bottom: 40px;
+        left: 55px;
+        z-index: 2;
+        visibility: hidden;
+
+        div {
+            width: 24px;
+            height: 64px;
+        }
+
+        p {
+            color: $white;
+            text-transform: uppercase;
+            font-size: 10px;
+            line-height: 12px;
+            margin-top: 12px;
+            width: 63px;
         }
     }
 }

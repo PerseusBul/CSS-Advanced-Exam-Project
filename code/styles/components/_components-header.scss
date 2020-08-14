@@ -4,7 +4,7 @@
 
 .main-header {
     display: grid;
-    grid-template-columns: 40.47% 44.81% 1.24% 6.35%;
+    grid-template-columns: 1fr 44.61% 1.24% 7.95%;
     column-gap: 2.48%;
     align-items: center;
     background-color: $white;
@@ -44,6 +44,7 @@
         &-arrow {
             width: 12px;
             height: 20px;
+            margin-left: 4px;
 
             & img:last-child {
                 display: none;
