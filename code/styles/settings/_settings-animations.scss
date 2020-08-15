@@ -1,56 +1,68 @@
-@import './_settings-colors';
+@import "./_settings-colors";
 
-@keyframes expand-and-square {
-    0% {
-        border-radius: 50%;
-        background-color: red;
-        width: 50px;
-        height: 50px;
-    }
-
-    50% {
-        background-color: yellow;
-        width: 100px;
-        height: 100px;
-    }
-
-    100% {
-        border-radius: 0;
-        width: 100px;
-        height: 100px;
-        background-color: yellow;
-    }
-}
-
-@keyframes reveal-left {
-    from {
-      opacity: 0;
-      transform: translateX(-40px);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
-  
-@keyframes grey-to-secondary {
+@keyframes moving-arrow {
   0% {
-    color: $grey-700;
+    width: 18px;
+    height: 30px;
+    transform: translateX(1160px);
   }
 
-  100% {
-    color: $secondary-color;
+  13% {
+    width: 16px;
+    height: 27px;
+    opacity: 0.9;
+    transform: translateX(1115px);
   }
-}
 
-@keyframes fade-in {
-  from {
-    opacity: 0;
+  25% {
+    width: 14px;
+    height: 24px;
+    opacity: 0.7;
+    transform: translateX(995px);
+  }
+
+  38% {
+    width: 12px;
+    height: 21px;
+    opacity: 0.5;
+    transform: translateX(920px);
+  }
+
+  50% {
+    width: 10px;
+    height: 18px;
+    opacity: 0.3;
+    transform: translateX(770px);
+  }
+
+  63% {
+    width: 12px;
+    height: 20px;
+    opacity: 0.5;
+    transform: translateX(670px);
+  }
+
+  75% {
+    opacity: 0.7;
+    transform: translateX(555px);
   }
 
   to {
     opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes positioning {
+  0%{
+    position: absolute;
+  }
+
+  50%{
+    position: static;
+  }
+
+  100%{
+    position: absolute;
   }
 }

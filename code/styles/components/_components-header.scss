@@ -1,6 +1,7 @@
 @import "../settings/_settings-colors.scss";
 @import "../settings/settings-shadows";
 @import "../settings/settings-breakpoints";
+@import '../settings/settings-animations';
 
 .main-header {
     display: grid;
@@ -58,6 +59,17 @@
                 & img:last-child {
                     display: block;
                 }
+            }
+
+            &:hover {
+                // position: relative;
+                // animation-name: moving-arrow;
+                // animation-duration: 12s;
+                // animation-delay: 1s;
+                // animation-iteration-count: 2;
+                // animation-direction: alternate;
+                // animation-timing-function: cubic-bezier(0.1, -0.1, 0.1, 0.1);
+                animation: moving-arrow 12s cubic-bezier(0.1, -0.1, 0.1, 0.1) 1s 2 alternate forwards;
             }
         }
 
